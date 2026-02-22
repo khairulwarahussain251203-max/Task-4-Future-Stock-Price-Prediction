@@ -52,20 +52,45 @@ This project demonstrates how to use machine learning models to predict stock pr
 ## Run Individual Components
 The project is divided into 10 parts that can be run separately:
 
-Part 1: Data fetching and imports
+    Part 1: Data fetching and imports
+    Part 2: Feature engineering
+    Part 3: Data preparation
+    Part 4: Linear Regression training
+    Part 5: Random Forest training
+    Part 6: Model comparison
+    Part 7-8: Visualizations
+    Part 9: Next day prediction
 
-Part 2: Feature engineering
+## 🧠 Model Architecture
+Feature Engineering
+The model uses 12 features:
 
-Part 3: Data preparation
+Open, High, Low, Volume (raw data)
+High_Low_Pct (daily range percentage)
+Close_Open_Pct (daily change percentage)
+Moving averages (5, 10, 20 days)
+Volatility (10-day standard deviation)
+Previous day's close and volume
 
-Part 4: Linear Regression training
+## Models
+Linear Regression
+    Simple, interpretable baseline model
+    Provides coefficient importance
+Random Forest Regressor
+    100 decision trees
+    Max depth: 10
+    Handles non-linear relationships
+    Provides feature importance scores
 
-Part 5: Random Forest training
+## 📊 Results
+The model outputs:
 
-Part 6: Model comparison
-
-Part 7-8: Visualizations
-
-Part 9: Next day prediction
-
-Part 10: Summary report
+    Training and testing metrics for both models
+    Feature importance rankings
+    Next day price prediction
+    Multiple visualization plots:
+    Time series comparison
+    Scatter plots (actual vs predicted)
+    Residual analysis
+    Error distribution
+    Feature importance bar charts
